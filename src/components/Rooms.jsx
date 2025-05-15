@@ -39,15 +39,13 @@ function Rooms() {
     "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqg110AKhLzzl6OsFLv6AZSUxgiARS-jKUTx7KQ_lsCTf_I5oToCsVBqysXaqESvmLppRE8OXdiFlNRQZ-R4aHn3c6C3z4C8UNP8WtH30rY_3p97diXAopShCiWMU_9wE7xMzCTIA=s1360-w1360-h1020-rw",
     "https://lh3.googleusercontent.com/gps-cs-s/AC9h4npdVd6WggGLXa3seNLJ-YI5EDMFqwlNKkJ5UOHDulRckop3-xgARpBXwvu5uzZk3_mRMV5e2S6zeE_qESqVG5w4q997n-NtJvbFDEEGX11ozl9rqo63IPNg1jyxB7brE0qg9tby=s1360-w1360-h1020-rw",
     "https://lh3.googleusercontent.com/gps-cs-s/AC9h4noXUGqN2A7jlaWt9CyAAIuBO47q2TIIj3MGeV8Ix7ekTGnte3AK1iP7qJ8SOUJAewK-T0AcBiKOH_096nyevEjzz-UISdNITfULobtZBa-3_EAsjEd26NhWCaoIdLcT_pu6P5q0jQ=w141-h101-n-k-no-nu",
-    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqRchZNa2Rb4ShNvg34-TZVHZeXN07eZnDYn7FvLKyh1W79COlsuhc1Hm1geQ2NGzWs6k-MP0SFCvehZosgrSD1Uu5FL0tlGUkuKc4BjudKwuQdhUERZR4XA5CMv1PjQ07maAg=s1360-w1360-h1020-rw",
-    "https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq-PtmxOVuZRSl50b-ki_f9zCeNYRCNrhu_NsfrXk5lZiZRnFhZxm9PJGsvMLPfsl81BmKEF8v--SKfM_rfOLKL527wxK9ezylcrUW-K6kc_5L1L4L-ZqyJcoF4Ol-JM3W9WqTY=s1360-w1360-h1020-rw",
   ];
 
   return (
     <div className="py-12 px-6 bg-gray-100">
       <h2 className="text-3xl font-bold text-center mb-10">Our Services</h2>
       <div className="grid md:grid-cols-3 gap-6">
-        {[1, 2, 3, 4, 5].map((room) => (
+        {[1, 2, 3].map((room) => (
           <Card key={room} className="shadow-md">
             <img
               src={imageUrls[room - 1]} // Access URL from array
